@@ -143,5 +143,18 @@ export const basketCheckout = (phones) => (dispatch, getState) => {
   // Implement a track() for “Order Completed”. Properties: revenue and coupon.
   // .: revenue and coupon variables are already initialised for you
 
+  // TODO: Day 3.1.1
+  // Update the “Order Completed” track() event. 
+  // Add the following properties: currency = "EUR", shipping=20, tax=5.5.
+  // For bonus points: 
+  //      Add a products array to the properties object, 
+  //      Each product should contain product_id, price, name and count. 
+  //      Data should come from the phones array.
+
+  // TODO: Day 3.1.2
+  // Update the “Order Completed” track() event. 
+  // Add the integrations object to block the event from being sent to Amplitude.
+  //      The name to use in the integrations object is 'Amplitude'.
+  
   alert(JSON.stringify(phones));
 };
